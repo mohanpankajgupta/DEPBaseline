@@ -79,6 +79,11 @@
 		601ADB591F5FBED600EC9F30 = {
 			isa = PBXGroup;
 			children = (
+				945C93FD1F5FCF7F000DA92C /* Model */,
+				945C94001F5FCF7F000DA92C /* View */,
+				945C93FC1F5FCF7F000DA92C /* Controller */,
+				945C93FE1F5FCF7F000DA92C /* Protocol */,
+				945C93FF1F5FCF7F000DA92C /* Utility */,
 				601ADB641F5FBED600EC9F30 /* DEPBaseline */,
 				601ADB7C1F5FBED600EC9F30 /* DEPBaselineTests */,
 				601ADB871F5FBED700EC9F30 /* DEPBaselineUITests */,
@@ -126,6 +131,46 @@
 				601ADB8A1F5FBED700EC9F30 /* Info.plist */,
 			);
 			path = DEPBaselineUITests;
+			sourceTree = "<group>";
+		};
+		945C93FC1F5FCF7F000DA92C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = DEPBaseline/Controller;
+			sourceTree = "<group>";
+		};
+		945C93FD1F5FCF7F000DA92C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = DEPBaseline/Model;
+			sourceTree = "<group>";
+		};
+		945C93FE1F5FCF7F000DA92C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocol;
+			path = DEPBaseline/Protocol;
+			sourceTree = "<group>";
+		};
+		945C93FF1F5FCF7F000DA92C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utility;
+			path = DEPBaseline/Utility;
+			sourceTree = "<group>";
+		};
+		945C94001F5FCF7F000DA92C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = DEPBaseline/View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,6 +556,7 @@
 				601ADB8F1F5FBED700EC9F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		601ADB901F5FBED700EC9F30 /* Build configuration list for PBXNativeTarget "DEPBaselineTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +565,7 @@
 				601ADB921F5FBED700EC9F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		601ADB931F5FBED700EC9F30 /* Build configuration list for PBXNativeTarget "DEPBaselineUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +574,7 @@
 				601ADB951F5FBED700EC9F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
