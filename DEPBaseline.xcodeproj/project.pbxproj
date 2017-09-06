@@ -15,6 +15,7 @@
 		601ADB731F5FBED600EC9F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601ADB711F5FBED600EC9F30 /* LaunchScreen.storyboard */; };
 		601ADB7E1F5FBED600EC9F30 /* DEPBaselineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601ADB7D1F5FBED600EC9F30 /* DEPBaselineTests.swift */; };
 		601ADB891F5FBED700EC9F30 /* DEPBaselineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601ADB881F5FBED700EC9F30 /* DEPBaselineUITests.swift */; };
+		945C94121F5FF249000DA92C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C94111F5FF249000DA92C /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		601ADB841F5FBED600EC9F30 /* DEPBaselineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEPBaselineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		601ADB881F5FBED700EC9F30 /* DEPBaselineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEPBaselineUITests.swift; sourceTree = "<group>"; };
 		601ADB8A1F5FBED700EC9F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		945C94111F5FF249000DA92C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		945C94101F5FF1B4000DA92C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				945C94111F5FF249000DA92C /* Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945C94121F5FF249000DA92C /* Utility.swift in Sources */,
 				601ADB681F5FBED600EC9F30 /* ViewController.swift in Sources */,
 				601ADB6E1F5FBED600EC9F30 /* DEPBaseline.xcdatamodeld in Sources */,
 				601ADB661F5FBED600EC9F30 /* AppDelegate.swift in Sources */,
