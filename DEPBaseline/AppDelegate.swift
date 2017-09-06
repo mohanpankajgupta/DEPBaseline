@@ -6,8 +6,6 @@
 //  Copyright © 2017 Netcracker. All rights reserved.
 //
 
-/// sample change -- just to test... 
-
 import UIKit
 import CoreData
 
