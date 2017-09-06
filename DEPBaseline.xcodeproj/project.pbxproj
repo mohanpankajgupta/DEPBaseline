@@ -15,6 +15,8 @@
 		601ADB731F5FBED600EC9F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601ADB711F5FBED600EC9F30 /* LaunchScreen.storyboard */; };
 		601ADB7E1F5FBED600EC9F30 /* DEPBaselineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601ADB7D1F5FBED600EC9F30 /* DEPBaselineTests.swift */; };
 		601ADB891F5FBED700EC9F30 /* DEPBaselineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601ADB881F5FBED700EC9F30 /* DEPBaselineUITests.swift */; };
+		945C940C1F5FD609000DA92C /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945C940B1F5FD609000DA92C /* LoginStoryboard.storyboard */; };
+		945C940E1F5FDBFD000DA92C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C940D1F5FDBFD000DA92C /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		601ADB841F5FBED600EC9F30 /* DEPBaselineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEPBaselineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		601ADB881F5FBED700EC9F30 /* DEPBaselineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEPBaselineUITests.swift; sourceTree = "<group>"; };
 		601ADB8A1F5FBED700EC9F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		945C940B1F5FD609000DA92C /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		945C940D1F5FDBFD000DA92C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		601ADB591F5FBED600EC9F30 = {
 			isa = PBXGroup;
 			children = (
+				945C93FF1F5FCF7F000DA92C /* Utility */,
 				601ADB641F5FBED600EC9F30 /* DEPBaseline */,
 				601ADB7C1F5FBED600EC9F30 /* DEPBaselineTests */,
 				601ADB871F5FBED700EC9F30 /* DEPBaselineUITests */,
@@ -99,7 +104,7 @@
 		601ADB641F5FBED600EC9F30 /* DEPBaseline */ = {
 			isa = PBXGroup;
 			children = (
-				945C940F1F5FF007000DA92C /* Utility */,
+				945C94061F5FD5D5000DA92C /* Login */,
 				601ADB651F5FBED600EC9F30 /* AppDelegate.swift */,
 				601ADB671F5FBED600EC9F30 /* ViewController.swift */,
 				601ADB691F5FBED600EC9F30 /* Main.storyboard */,
@@ -129,11 +134,53 @@
 			path = DEPBaselineUITests;
 			sourceTree = "<group>";
 		};
-		945C940F1F5FF007000DA92C /* Utility */ = {
+		945C93FF1F5FCF7F000DA92C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				945C940D1F5FDBFD000DA92C /* Utility.swift */,
+			);
+			name = Utility;
+			path = DEPBaseline/Utility;
+			sourceTree = "<group>";
+		};
+		945C94061F5FD5D5000DA92C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				945C94071F5FD5D5000DA92C /* Controller */,
+				945C94081F5FD5D5000DA92C /* Model */,
+				945C94091F5FD5D5000DA92C /* Protocol */,
+				945C940A1F5FD5D5000DA92C /* View */,
+				945C940B1F5FD609000DA92C /* LoginStoryboard.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		945C94071F5FD5D5000DA92C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Utility;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		945C94081F5FD5D5000DA92C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		945C94091F5FD5D5000DA92C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		945C940A1F5FD5D5000DA92C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +293,7 @@
 				601ADB731F5FBED600EC9F30 /* LaunchScreen.storyboard in Resources */,
 				601ADB701F5FBED600EC9F30 /* Assets.xcassets in Resources */,
 				601ADB6B1F5FBED600EC9F30 /* Main.storyboard in Resources */,
+				945C940C1F5FD609000DA92C /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945C940E1F5FDBFD000DA92C /* Utility.swift in Sources */,
 				601ADB681F5FBED600EC9F30 /* ViewController.swift in Sources */,
 				601ADB6E1F5FBED600EC9F30 /* DEPBaseline.xcdatamodeld in Sources */,
 				601ADB661F5FBED600EC9F30 /* AppDelegate.swift in Sources */,
