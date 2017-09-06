@@ -51,7 +51,7 @@
 		601ADB841F5FBED600EC9F30 /* DEPBaselineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEPBaselineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		601ADB881F5FBED700EC9F30 /* DEPBaselineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEPBaselineUITests.swift; sourceTree = "<group>"; };
 		601ADB8A1F5FBED700EC9F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		945C940B1F5FD609000DA92C /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		945C940B1F5FD609000DA92C /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LoginStoryboard.storyboard; path = ../LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		945C940D1F5FDBFD000DA92C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +150,6 @@
 				945C94081F5FD5D5000DA92C /* Model */,
 				945C94091F5FD5D5000DA92C /* Protocol */,
 				945C940A1F5FD5D5000DA92C /* View */,
-				945C940B1F5FD609000DA92C /* LoginStoryboard.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -179,6 +178,7 @@
 		945C940A1F5FD5D5000DA92C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				945C940B1F5FD609000DA92C /* LoginStoryboard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
