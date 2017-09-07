@@ -15,7 +15,16 @@
 		601ADB731F5FBED600EC9F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601ADB711F5FBED600EC9F30 /* LaunchScreen.storyboard */; };
 		601ADB7E1F5FBED600EC9F30 /* DEPBaselineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601ADB7D1F5FBED600EC9F30 /* DEPBaselineTests.swift */; };
 		601ADB891F5FBED700EC9F30 /* DEPBaselineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601ADB881F5FBED700EC9F30 /* DEPBaselineUITests.swift */; };
+		9406608D1F6112BC0038570F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9406608C1F6112BC0038570F /* StoreKit.framework */; };
+		9406608F1F6112CD0038570F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9406608E1F6112CD0038570F /* AddressBook.framework */; };
 		945C94121F5FF249000DA92C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C94111F5FF249000DA92C /* Utility.swift */; };
+		945C94161F5FF482000DA92C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C94151F5FF482000DA92C /* LoginViewController.swift */; };
+		945C941C1F5FFFD4000DA92C /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 945C94191F5FFFD4000DA92C /* GoogleSignIn.bundle */; };
+		945C941D1F5FFFD4000DA92C /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C941A1F5FFFD4000DA92C /* GoogleSignIn.framework */; };
+		945C941E1F5FFFD4000DA92C /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C941B1F5FFFD4000DA92C /* GoogleSignInDependencies.framework */; };
+		945C94211F60002B000DA92C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C94201F60002B000DA92C /* SafariServices.framework */; };
+		945C94231F60006D000DA92C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C94221F60006D000DA92C /* SystemConfiguration.framework */; };
+		945C94251F60050B000DA92C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 945C94241F60050B000DA92C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +59,17 @@
 		601ADB841F5FBED600EC9F30 /* DEPBaselineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEPBaselineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		601ADB881F5FBED700EC9F30 /* DEPBaselineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEPBaselineUITests.swift; sourceTree = "<group>"; };
 		601ADB8A1F5FBED700EC9F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9406608C1F6112BC0038570F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9406608E1F6112CD0038570F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		945C94111F5FF249000DA92C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		945C94151F5FF482000DA92C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		945C94191F5FFFD4000DA92C /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		945C941A1F5FFFD4000DA92C /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		945C941B1F5FFFD4000DA92C /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		945C94201F60002B000DA92C /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		945C94221F60006D000DA92C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		945C94241F60050B000DA92C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		94C2C7061F61362600AF88ED /* DEPBaseline-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DEPBaseline-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945C94231F60006D000DA92C /* SystemConfiguration.framework in Frameworks */,
+				9406608F1F6112CD0038570F /* AddressBook.framework in Frameworks */,
+				9406608D1F6112BC0038570F /* StoreKit.framework in Frameworks */,
+				945C94211F60002B000DA92C /* SafariServices.framework in Frameworks */,
+				945C941E1F5FFFD4000DA92C /* GoogleSignInDependencies.framework in Frameworks */,
+				945C941D1F5FFFD4000DA92C /* GoogleSignIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +106,12 @@
 		601ADB591F5FBED600EC9F30 = {
 			isa = PBXGroup;
 			children = (
+				945C94181F5FFFD4000DA92C /* ExternalFrameworks */,
 				601ADB641F5FBED600EC9F30 /* DEPBaseline */,
 				601ADB7C1F5FBED600EC9F30 /* DEPBaselineTests */,
 				601ADB871F5FBED700EC9F30 /* DEPBaselineUITests */,
 				601ADB631F5FBED600EC9F30 /* Products */,
+				945C941F1F60002B000DA92C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +128,8 @@
 		601ADB641F5FBED600EC9F30 /* DEPBaseline */ = {
 			isa = PBXGroup;
 			children = (
+				945C94241F60050B000DA92C /* GoogleService-Info.plist */,
+				945C94131F5FF3B5000DA92C /* Login */,
 				945C94101F5FF1B4000DA92C /* Utility */,
 				601ADB651F5FBED600EC9F30 /* AppDelegate.swift */,
 				601ADB671F5FBED600EC9F30 /* ViewController.swift */,
@@ -109,6 +138,7 @@
 				601ADB711F5FBED600EC9F30 /* LaunchScreen.storyboard */,
 				601ADB741F5FBED600EC9F30 /* Info.plist */,
 				601ADB6C1F5FBED600EC9F30 /* DEPBaseline.xcdatamodeld */,
+				94C2C7061F61362600AF88ED /* DEPBaseline-Bridging-Header.h */,
 			);
 			path = DEPBaseline;
 			sourceTree = "<group>";
@@ -137,6 +167,44 @@
 				945C94111F5FF249000DA92C /* Utility.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		945C94131F5FF3B5000DA92C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				945C94141F5FF46E000DA92C /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		945C94141F5FF46E000DA92C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				945C94151F5FF482000DA92C /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		945C94181F5FFFD4000DA92C /* ExternalFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				945C94191F5FFFD4000DA92C /* GoogleSignIn.bundle */,
+				945C941A1F5FFFD4000DA92C /* GoogleSignIn.framework */,
+				945C941B1F5FFFD4000DA92C /* GoogleSignInDependencies.framework */,
+			);
+			name = ExternalFrameworks;
+			path = DEPBaseline/ExternalFrameworks;
+			sourceTree = "<group>";
+		};
+		945C941F1F60002B000DA92C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9406608E1F6112CD0038570F /* AddressBook.framework */,
+				9406608C1F6112BC0038570F /* StoreKit.framework */,
+				945C94221F60006D000DA92C /* SystemConfiguration.framework */,
+				945C94201F60002B000DA92C /* SafariServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +275,7 @@
 				TargetAttributes = {
 					601ADB611F5FBED600EC9F30 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					601ADB781F5FBED600EC9F30 = {
@@ -246,7 +315,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945C941C1F5FFFD4000DA92C /* GoogleSignIn.bundle in Resources */,
 				601ADB731F5FBED600EC9F30 /* LaunchScreen.storyboard in Resources */,
+				945C94251F60050B000DA92C /* GoogleService-Info.plist in Resources */,
 				601ADB701F5FBED600EC9F30 /* Assets.xcassets in Resources */,
 				601ADB6B1F5FBED600EC9F30 /* Main.storyboard in Resources */,
 			);
@@ -276,6 +347,7 @@
 				945C94121F5FF249000DA92C /* Utility.swift in Sources */,
 				601ADB681F5FBED600EC9F30 /* ViewController.swift in Sources */,
 				601ADB6E1F5FBED600EC9F30 /* DEPBaseline.xcdatamodeld in Sources */,
+				945C94161F5FF482000DA92C /* LoginViewController.swift in Sources */,
 				601ADB661F5FBED600EC9F30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +447,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -419,6 +495,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,10 +510,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DEPBaseline/ExternalFrameworks",
+				);
 				INFOPLIST_FILE = DEPBaseline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nc.DEPBaseline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DEPBaseline/DEPBaseline-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -442,10 +530,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DEPBaseline/ExternalFrameworks",
+				);
 				INFOPLIST_FILE = DEPBaseline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nc.DEPBaseline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DEPBaseline/DEPBaseline-Bridging-Header.h";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
