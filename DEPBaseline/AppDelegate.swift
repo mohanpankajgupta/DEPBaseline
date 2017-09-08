@@ -128,26 +128,6 @@ extension AppDelegate: GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
-        if (error == nil) {
-            
-            // Perform any operations on signed in user here.
-            let userId = user.userID
-            let idToken = user.authentication.idToken
-            let fullName = user.profile.name
-            let givenName = user.profile.givenName
-            let familyName = user.profile.familyName
-            let email = user.profile.email
-            
-            print(userId ?? "")
-            print(idToken ?? "")
-            print(fullName ?? "")
-            print(givenName ?? "")
-            print(familyName ?? "")
-            print(email ?? "")
-            
-        } else {
-            print("\(error.localizedDescription)")
-        }
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {

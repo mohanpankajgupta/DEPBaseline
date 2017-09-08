@@ -13,7 +13,7 @@
         <scene sceneID="7Vq-l1-0wR">
             <objects>
                 <navigationController id="hAB-Vl-5BZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OVr-KS-5oA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="OVr-KS-5oA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -108,6 +108,7 @@
                     <connections>
                         <outlet property="facebookLoginButton" destination="pxK-S1-2MP" id="PpY-cB-04W"/>
                         <outlet property="passwordTextField" destination="LP9-TO-bhY" id="Y53-HR-AtW"/>
+                        <outlet property="signoutButton" destination="8wl-US-GW3" id="vmP-0f-mBZ"/>
                         <outlet property="usernameTextField" destination="zYt-oP-n1I" id="hqy-CQ-nys"/>
                     </connections>
                 </viewController>
