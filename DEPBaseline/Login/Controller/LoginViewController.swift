@@ -47,16 +47,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     internal func configureSignoutButton() {
         signoutButton.isEnabled = (FBSDKAccessToken.current() != nil) || (GIDSignIn.sharedInstance().currentUser != nil) ? true : false
     }
-    
-    func sign(inWillDispatch signIn: GIDSignIn!, error: Error!) {
-        print("called")
-    }
-    
-    
-    /*func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
-        print("called")
-    }*/
-    
+
     internal func returnUserData()
     {
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"first_name, last_name, email, picture.type(large)"])
