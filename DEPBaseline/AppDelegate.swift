@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GIDSignIn.sharedInstance().clientID = utility.getClientId()
         GIDSignIn.sharedInstance().delegate = self
         
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
         return true
     }
 
@@ -41,12 +43,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+        
+        let loginManager = FBSDKLoginManager()
+        loginManager.logOut()
+        GIDSignIn.sharedInstance().signOut()
     }
 
     // MARK: - Core Data stack
@@ -93,16 +100,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
+    func application(_ application: UIApplication,
+                     open url: URL,
+                     sourceApplication: String?,
+                     annotation: Any) -> Bool {
+        
+        if let fbScheme = FBSDKSettings.appID(), url.scheme == "fb\(fbScheme)" {
+           
+            return FBSDKApplicationDelegate.sharedInstance().application(
+                application,
+                open: url as URL!,
+                sourceApplication: sourceApplication,
+                annotation: annotation)
+            
+        }else {
+            // string is reverse client ID
+            return GIDSignIn.sharedInstance().handle(url as URL!,
+                                                        sourceApplication:  sourceApplication,
+                                                        annotation: annotation)
+        }
+    }
+    
 }
 
 extension AppDelegate: GIDSignInDelegate {
-    
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        return GIDSignIn.sharedInstance().handle(url,
-                                                 sourceApplication: options[.sourceApplication] as? String,
-                                                 annotation: options[.annotation])
-    }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         

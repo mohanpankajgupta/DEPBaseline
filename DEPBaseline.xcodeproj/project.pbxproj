@@ -25,6 +25,8 @@
 		945C94211F60002B000DA92C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C94201F60002B000DA92C /* SafariServices.framework */; };
 		945C94231F60006D000DA92C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C94221F60006D000DA92C /* SystemConfiguration.framework */; };
 		945C94251F60050B000DA92C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 945C94241F60050B000DA92C /* GoogleService-Info.plist */; };
+		94C2C7091F613A6E00AF88ED /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C2C7071F613A6E00AF88ED /* FBSDKCoreKit.framework */; };
+		94C2C70A1F613A6E00AF88ED /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C2C7081F613A6E00AF88ED /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		945C94221F60006D000DA92C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		945C94241F60050B000DA92C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94C2C7061F61362600AF88ED /* DEPBaseline-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DEPBaseline-Bridging-Header.h"; sourceTree = "<group>"; };
+		94C2C7071F613A6E00AF88ED /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		94C2C7081F613A6E00AF88ED /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,9 @@
 				9406608F1F6112CD0038570F /* AddressBook.framework in Frameworks */,
 				9406608D1F6112BC0038570F /* StoreKit.framework in Frameworks */,
 				945C94211F60002B000DA92C /* SafariServices.framework in Frameworks */,
+				94C2C7091F613A6E00AF88ED /* FBSDKCoreKit.framework in Frameworks */,
 				945C941E1F5FFFD4000DA92C /* GoogleSignInDependencies.framework in Frameworks */,
+				94C2C70A1F613A6E00AF88ED /* FBSDKLoginKit.framework in Frameworks */,
 				945C941D1F5FFFD4000DA92C /* GoogleSignIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +194,8 @@
 		945C94181F5FFFD4000DA92C /* ExternalFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94C2C7071F613A6E00AF88ED /* FBSDKCoreKit.framework */,
+				94C2C7081F613A6E00AF88ED /* FBSDKLoginKit.framework */,
 				945C94191F5FFFD4000DA92C /* GoogleSignIn.bundle */,
 				945C941A1F5FFFD4000DA92C /* GoogleSignIn.framework */,
 				945C941B1F5FFFD4000DA92C /* GoogleSignInDependencies.framework */,
@@ -275,6 +283,7 @@
 				TargetAttributes = {
 					601ADB611F5FBED600EC9F30 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VU7MBVWDAC;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -511,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VU7MBVWDAC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DEPBaseline/ExternalFrameworks",
@@ -531,6 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VU7MBVWDAC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DEPBaseline/ExternalFrameworks",

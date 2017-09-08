@@ -13,7 +13,7 @@
         <scene sceneID="7Vq-l1-0wR">
             <objects>
                 <navigationController id="hAB-Vl-5BZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="OVr-KS-5oA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OVr-KS-5oA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -63,16 +63,10 @@
                                     <action selector="loginButtonAction:" destination="h3F-g7-vLd" eventType="touchUpInside" id="Bc9-Ln-79Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxK-S1-2MP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxK-S1-2MP" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="20" y="329" width="335" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Login with facebook">
-                                    <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="facebookLoginButtonAction:" destination="h3F-g7-vLd" eventType="touchUpInside" id="4Ew-eE-TBw"/>
-                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHm-4U-S3u" customClass="GIDSignInButton">
                                 <rect key="frame" x="20" y="379" width="335" height="50"/>
@@ -80,9 +74,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ike-uu-nmf"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="googleSgininButtonAction:" destination="h3F-g7-vLd" eventType="touchUpInside" id="gVd-9c-Osb"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,7 +106,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="googleSgininButton" destination="WHm-4U-S3u" id="UYI-d1-V2q"/>
+                        <outlet property="facebookLoginButton" destination="pxK-S1-2MP" id="PpY-cB-04W"/>
                         <outlet property="passwordTextField" destination="LP9-TO-bhY" id="Y53-HR-AtW"/>
                         <outlet property="usernameTextField" destination="zYt-oP-n1I" id="hqy-CQ-nys"/>
                     </connections>
