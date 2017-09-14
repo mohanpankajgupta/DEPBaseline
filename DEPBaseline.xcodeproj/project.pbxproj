@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		601ADB661F5FBED600EC9F30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601ADB651F5FBED600EC9F30 /* AppDelegate.swift */; };
-		601ADB681F5FBED600EC9F30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601ADB671F5FBED600EC9F30 /* ViewController.swift */; };
 		601ADB6B1F5FBED600EC9F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601ADB691F5FBED600EC9F30 /* Main.storyboard */; };
 		601ADB6E1F5FBED600EC9F30 /* DEPBaseline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 601ADB6C1F5FBED600EC9F30 /* DEPBaseline.xcdatamodeld */; };
 		601ADB701F5FBED600EC9F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601ADB6F1F5FBED600EC9F30 /* Assets.xcassets */; };
@@ -25,8 +24,10 @@
 		945C94211F60002B000DA92C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C94201F60002B000DA92C /* SafariServices.framework */; };
 		945C94231F60006D000DA92C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C94221F60006D000DA92C /* SystemConfiguration.framework */; };
 		945C94251F60050B000DA92C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 945C94241F60050B000DA92C /* GoogleService-Info.plist */; };
-		94C2C7091F613A6E00AF88ED /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C2C7071F613A6E00AF88ED /* FBSDKCoreKit.framework */; };
-		94C2C70A1F613A6E00AF88ED /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C2C7081F613A6E00AF88ED /* FBSDKLoginKit.framework */; };
+		949D3C361F6AA5AE008B4E1F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949D3C341F6AA5AD008B4E1F /* FBSDKLoginKit.framework */; };
+		949D3C371F6AA5AE008B4E1F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949D3C351F6AA5AE008B4E1F /* FBSDKCoreKit.framework */; };
+		949D3C391F6AA608008B4E1F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949D3C381F6AA607008B4E1F /* Bolts.framework */; };
+		94E1C7FE1F68FF340086D1DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1C7FD1F68FF340086D1DD /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,6 @@
 /* Begin PBXFileReference section */
 		601ADB621F5FBED600EC9F30 /* DEPBaseline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEPBaseline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		601ADB651F5FBED600EC9F30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		601ADB671F5FBED600EC9F30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		601ADB6A1F5FBED600EC9F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		601ADB6D1F5FBED600EC9F30 /* DEPBaseline.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DEPBaseline.xcdatamodel; sourceTree = "<group>"; };
 		601ADB6F1F5FBED600EC9F30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,9 +71,11 @@
 		945C94201F60002B000DA92C /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		945C94221F60006D000DA92C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		945C94241F60050B000DA92C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		949D3C341F6AA5AD008B4E1F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		949D3C351F6AA5AE008B4E1F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		949D3C381F6AA607008B4E1F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		94C2C7061F61362600AF88ED /* DEPBaseline-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DEPBaseline-Bridging-Header.h"; sourceTree = "<group>"; };
-		94C2C7071F613A6E00AF88ED /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		94C2C7081F613A6E00AF88ED /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		94E1C7FD1F68FF340086D1DD /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +87,10 @@
 				9406608F1F6112CD0038570F /* AddressBook.framework in Frameworks */,
 				9406608D1F6112BC0038570F /* StoreKit.framework in Frameworks */,
 				945C94211F60002B000DA92C /* SafariServices.framework in Frameworks */,
-				94C2C7091F613A6E00AF88ED /* FBSDKCoreKit.framework in Frameworks */,
+				949D3C361F6AA5AE008B4E1F /* FBSDKLoginKit.framework in Frameworks */,
+				949D3C371F6AA5AE008B4E1F /* FBSDKCoreKit.framework in Frameworks */,
+				949D3C391F6AA608008B4E1F /* Bolts.framework in Frameworks */,
 				945C941E1F5FFFD4000DA92C /* GoogleSignInDependencies.framework in Frameworks */,
-				94C2C70A1F613A6E00AF88ED /* FBSDKLoginKit.framework in Frameworks */,
 				945C941D1F5FFFD4000DA92C /* GoogleSignIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,10 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				945C94241F60050B000DA92C /* GoogleService-Info.plist */,
+				94E1C7FB1F68FF100086D1DD /* Profile */,
 				945C94131F5FF3B5000DA92C /* Login */,
 				945C94101F5FF1B4000DA92C /* Utility */,
 				601ADB651F5FBED600EC9F30 /* AppDelegate.swift */,
-				601ADB671F5FBED600EC9F30 /* ViewController.swift */,
 				601ADB691F5FBED600EC9F30 /* Main.storyboard */,
 				601ADB6F1F5FBED600EC9F30 /* Assets.xcassets */,
 				601ADB711F5FBED600EC9F30 /* LaunchScreen.storyboard */,
@@ -194,8 +197,6 @@
 		945C94181F5FFFD4000DA92C /* ExternalFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94C2C7071F613A6E00AF88ED /* FBSDKCoreKit.framework */,
-				94C2C7081F613A6E00AF88ED /* FBSDKLoginKit.framework */,
 				945C94191F5FFFD4000DA92C /* GoogleSignIn.bundle */,
 				945C941A1F5FFFD4000DA92C /* GoogleSignIn.framework */,
 				945C941B1F5FFFD4000DA92C /* GoogleSignInDependencies.framework */,
@@ -207,12 +208,31 @@
 		945C941F1F60002B000DA92C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				949D3C381F6AA607008B4E1F /* Bolts.framework */,
+				949D3C351F6AA5AE008B4E1F /* FBSDKCoreKit.framework */,
+				949D3C341F6AA5AD008B4E1F /* FBSDKLoginKit.framework */,
 				9406608E1F6112CD0038570F /* AddressBook.framework */,
 				9406608C1F6112BC0038570F /* StoreKit.framework */,
 				945C94221F60006D000DA92C /* SystemConfiguration.framework */,
 				945C94201F60002B000DA92C /* SafariServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94E1C7FB1F68FF100086D1DD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				94E1C7FC1F68FF100086D1DD /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		94E1C7FC1F68FF100086D1DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				94E1C7FD1F68FF340086D1DD /* ProfileViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,22 +298,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Netcracker;
 				TargetAttributes = {
 					601ADB611F5FBED600EC9F30 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = VU7MBVWDAC;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					601ADB781F5FBED600EC9F30 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 601ADB611F5FBED600EC9F30;
 					};
 					601ADB831F5FBED600EC9F30 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 601ADB611F5FBED600EC9F30;
 					};
@@ -354,8 +376,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				945C94121F5FF249000DA92C /* Utility.swift in Sources */,
-				601ADB681F5FBED600EC9F30 /* ViewController.swift in Sources */,
 				601ADB6E1F5FBED600EC9F30 /* DEPBaseline.xcdatamodeld in Sources */,
+				94E1C7FE1F68FF340086D1DD /* ProfileViewController.swift in Sources */,
 				945C94161F5FF482000DA92C /* LoginViewController.swift in Sources */,
 				601ADB661F5FBED600EC9F30 /* AppDelegate.swift in Sources */,
 			);
@@ -416,13 +438,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -430,7 +455,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -439,6 +468,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Documents/FacebookSDK";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -471,13 +501,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -485,7 +518,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -494,6 +531,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Documents/FacebookSDK";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -524,15 +563,18 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DEPBaseline/ExternalFrameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DEPBaseline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nc.DEPBaseline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DEPBaseline/DEPBaseline-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_REFLECTION_METADATA_LEVEL = all;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -545,14 +587,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DEPBaseline/ExternalFrameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DEPBaseline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nc.DEPBaseline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DEPBaseline/DEPBaseline-Bridging-Header.h";
 				SWIFT_REFLECTION_METADATA_LEVEL = all;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -565,7 +610,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nc.DEPBaselineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEPBaseline.app/DEPBaseline";
 			};
 			name = Debug;
@@ -579,7 +625,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nc.DEPBaselineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEPBaseline.app/DEPBaseline";
 			};
 			name = Release;
@@ -592,7 +639,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nc.DEPBaselineUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = DEPBaseline;
 			};
 			name = Debug;
@@ -605,7 +653,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nc.DEPBaselineUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = DEPBaseline;
 			};
 			name = Release;

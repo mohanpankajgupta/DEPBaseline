@@ -13,11 +13,8 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().delegate = self
         
+        configureGoogle()
         configureFacebook()
         
         if (FBSDKAccessToken.current() != nil) {
@@ -44,6 +41,11 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         facebookLoginButton.delegate = self
     }
     
+    private func configureGoogle() {
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().delegate = self
+    }
+    
     internal func configureSignoutButton() {
         signoutButton.isEnabled = (FBSDKAccessToken.current() != nil) || (GIDSignIn.sharedInstance().currentUser != nil) ? true : false
     }
@@ -65,6 +67,13 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
                 
             }
         })
+    }
+    
+    internal func displayTabbar() {
+        
+        let baseTabBarController = self.storyboard?.instantiateViewController(withIdentifier: "BaseTabBarController") as! UITabBarController
+        self.navigationController?.pushViewController(baseTabBarController, animated: true)
+        
     }
     
     //MARK: Button Actions
@@ -97,6 +106,8 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         
     }
     
+    //MARK: IBOutlets
+    
     @IBOutlet weak var signoutButton: UIBarButtonItem!
     @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
     @IBOutlet weak var usernameTextField: UITextField!
@@ -124,10 +135,11 @@ extension LoginViewController: FBSDKLoginButtonDelegate {
         
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         
-        if ((error) != nil) {
+        if let result = result, ((error) != nil || result.isCancelled) {
             // Process error
         } else {
             self.returnUserData()
+            displayTabbar()
         }
         
         configureSignoutButton()
@@ -137,7 +149,7 @@ extension LoginViewController: FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         FBSDKLoginManager().logOut()
     }
-    
+
 }
 
 extension LoginViewController: GIDSignInDelegate {
@@ -160,6 +172,8 @@ extension LoginViewController: GIDSignInDelegate {
             print(givenName ?? "")
             print(familyName ?? "")
             print(email ?? "")
+            
+            displayTabbar()
             
         } else {
             print("\(error.localizedDescription)")
